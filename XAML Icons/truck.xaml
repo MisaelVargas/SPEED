@@ -1,0 +1,25 @@
+<!-- Created with Ai->XAML Export Plug-In Version 0.2 (PC/64) -->
+<!-- By Mike Swanson (http://blog.mikeswanson.com/)           -->
+
+<Viewbox Width="24.000" Height="20.000"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Canvas Width="24.000" Height="20.000">
+
+  <Canvas>
+
+  <!-- Capa 1/<Trazado> -->
+  <Path StrokeThickness="2.0" Stroke="#ff000000" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Data="F1 M 1.000,1.000 L 16.000,1.000 L 16.000,14.000 L 1.000,14.000 L 1.000,1.000 Z"/>
+
+  <!-- Capa 1/<Trazado> -->
+  <Path StrokeThickness="2.0" Stroke="#ff000000" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Data="F1 M 16.000,6.000 L 20.000,6.000 L 23.000,9.000 L 23.000,14.000 L 16.000,14.000 L 16.000,6.000 Z"/>
+
+  <!-- Capa 1/<Trazado> -->
+  <Path StrokeThickness="2.0" Stroke="#ff000000" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Data="F1 M 5.500,14.000 C 6.881,14.000 8.000,15.119 8.000,16.500 C 8.000,17.881 6.881,19.000 5.500,19.000 C 4.119,19.000 3.000,17.881 3.000,16.500 C 3.000,15.119 4.119,14.000 5.500,14.000 Z"/>
+
+  <!-- Capa 1/<Trazado> -->
+  <Path StrokeThickness="2.0" Stroke="#ff000000" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Data="F1 M 18.500,14.000 C 19.881,14.000 21.000,15.119 21.000,16.500 C 21.000,17.881 19.881,19.000 18.500,19.000 C 17.119,19.000 16.000,17.881 16.000,16.500 C 16.000,15.119 17.119,14.000 18.500,14.000 Z"/>
+
+  </Canvas>
+</Canvas>
+</Viewbox>

@@ -1,0 +1,24 @@
+﻿<Page x:Class="SPEED.AMantenimiento"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:SPEED"
+      mc:Ignorable="d" 
+      d:DesignHeight="608" d:DesignWidth="997"
+      Title="AMantenimiento">
+    <Grid Background="WhiteSmoke">
+        <Grid Margin="40" Height="528" Width="917">
+            <Label Style="{StaticResource MetroLabel}" Content="Id Inventario" HorizontalAlignment="Left" Height="27" Margin="70,33,0,0" VerticalAlignment="Top" Width="107" FontFamily="Aller" Foreground="#FF232323"/>
+            <TextBox x:Name="IdInventario" Style="{StaticResource MetroTextBox}"  MaxLines="1"  MaxLength="11" HorizontalAlignment="Left" Height="27" Margin="237,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Background="#FFE6E6E6" BorderBrush="{x:Null}" PreviewTextInput="NumberValidationTextBox"/>
+            <Label Style="{StaticResource MetroLabel}" Content="Fecha de Inicio" HorizontalAlignment="Left" Height="27" Margin="70,91,0,0" VerticalAlignment="Top" Width="107" FontFamily="Aller" Foreground="#FF232323"/>
+            <DatePicker x:Name="FechaInicio" Language="es-MX" HorizontalAlignment="Left" Height="32" Margin="237,86,0,0" VerticalAlignment="Top" Width="151"/>
+            <Label Style="{StaticResource MetroLabel}" Content="Fecha de finalizacion" HorizontalAlignment="Left" Height="28" Margin="70,151,0,0" VerticalAlignment="Top" Width="138" FontFamily="Aller" Foreground="#FF232323"/>
+            <DatePicker x:Name="FechaTermino" Language="es-MX" HorizontalAlignment="Left" Height="28" Margin="237,151,0,0" VerticalAlignment="Top" Width="151"/>
+            <Button Style="{x:Null}" Content="Agregar" HorizontalAlignment="Left" Height="28" Margin="541.264,90.807,0,0" VerticalAlignment="Top" Width="128" Background="#FFF7971E" BorderBrush="{x:Null}" FontSize="16" FontFamily="Aller" Foreground="White" Click="Agregar_Click" />
+            <TextBox x:Name="SearchBox" Style="{StaticResource MetroTextBox}" TextAlignment="Justify"  MaxLines="1"  MaxLength="15" HorizontalAlignment="Left" Height="28" Margin="10,234.203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="755" Background="#FFE6E6E6" FontFamily="Aller" FontSize="15" CaretBrush="#FF3A79B7" BorderBrush="{x:Null}" SelectionBrush="#FF979797" />
+            <Button Style="{x:Null}" Content="Buscar" HorizontalAlignment="Left" Height="28" Margin="779,234.203,0,0" VerticalAlignment="Top" Width="128" Background="#FFF7971E" BorderBrush="{x:Null}" FontSize="16" FontFamily="Aller" Foreground="White" Click="Buscar_Click" />
+            <DataGrid x:Name="MantenimientoGrid" HorizontalAlignment="Left" Height="210.161" Margin="10,288.783,0,0" VerticalAlignment="Top" Width="897"/>
+        </Grid>
+    </Grid>
+</Page>

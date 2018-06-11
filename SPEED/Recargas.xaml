@@ -1,0 +1,17 @@
+﻿<Page x:Class="SPEED.Recargas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SPEED"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="997"
+      Title="Recargas">
+    <Grid Background="WhiteSmoke">
+        <Label Style="{StaticResource MetroLabel}" Content="Numero de tarjeta" HorizontalAlignment="Left" Height="38" Margin="238,222,0,0" VerticalAlignment="Top" Width="207" FontFamily="Aller" Foreground="#FF232323" FontSize="24"/>
+        <TextBox x:Name="NumTarjeta" Style="{StaticResource MetroTextBox}" TextAlignment="Justify"  MaxLines="1"  MaxLength="11" HorizontalAlignment="Left" Height="38" Margin="461,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Background="{x:Null}" FontFamily="Aller" FontSize="22" CaretBrush="#FF3A79B7" BorderBrush="#FFF7971E" SelectionBrush="#FF979797" BorderThickness="2" PreviewTextInput="NumberValidationTextBox"/>
+        <Label Style="{StaticResource MetroLabel}" Content="Monto $" HorizontalAlignment="Left" Height="38" Margin="347,300,0,0" VerticalAlignment="Top" Width="99" FontFamily="Aller" Foreground="#FF232323" FontSize="24"/>
+        <TextBox x:Name="Monto" Style="{StaticResource MetroTextBox}" TextAlignment="Justify"  MaxLines="1"  MaxLength="11" HorizontalAlignment="Left" Height="40" Margin="461,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Background="{x:Null}" FontFamily="Aller" FontSize="22" CaretBrush="#FF3A79B7" BorderBrush="#FFF7971E" SelectionBrush="#FF979797" BorderThickness="2" PreviewTextInput="NumberValidationTextBox"/>
+        <Button Style="{x:Null}" Content="Recargar" HorizontalAlignment="Center" Height="50" VerticalAlignment="Bottom" Width="162" Background="#FF8B8B8B" BorderBrush="{x:Null}" FontSize="20" FontFamily="Aller" Foreground="#FFF3F3F3" Margin="415,0,415,229" Padding="1" Click="Recarga_Click"/>
+    </Grid>
+</Page>

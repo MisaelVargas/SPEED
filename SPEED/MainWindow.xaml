@@ -1,0 +1,61 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SPEED"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Name="ButtonDrag" x:Class="SPEED.MainWindow"
+        mc:Ignorable="d" WindowState="Normal" BorderBrush="#FF262A34" BorderThickness="3"
+        Title="SPEED" Height="656" Width="1206" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="maxresdefault.jpg" Opacity="0.05"/>
+    </Window.Background>
+    <Window.Effect>
+        <DropShadowEffect BlurRadius="20" Direction="3" RenderingBias="Quality" ShadowDepth="3" Color="#FF1F1F1F"/>
+    </Window.Effect>
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="650" VerticalAlignment="Top" Width="203">
+            <Grid.Background>
+                <SolidColorBrush Color="#FF262A34" Opacity="0.65"/>
+            </Grid.Background>
+            <ed:RegularPolygon Fill="#FFE4E4E4" HorizontalAlignment="Left" Height="45" InnerRadius="1" Margin="22,71,0,0" PointCount="6" Stretch="Fill" VerticalAlignment="Top" Width="38" StrokeEndLineCap="Round" StrokeThickness="2">
+                <ed:RegularPolygon.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF7971E" Offset="0"/>
+                        <GradientStop Color="#FFFFD200" Offset="1"/>
+                    </LinearGradientBrush>
+                </ed:RegularPolygon.Stroke>
+            </ed:RegularPolygon>
+            <Image HorizontalAlignment="Center" Width="183" Source="Art/SPEED3.png" Margin="10,521,10,29"/>
+            <Grid HorizontalAlignment="Left" Height="195" Margin="0,216.738,0,0" VerticalAlignment="Top" Width="203">
+                <Rectangle x:Name="MenuCursor" Width="203.039" Margin="0" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Height="39" VerticalAlignment="Top">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,3" StartPoint="0,0">
+                            <GradientStop Color="#FFF7971E"/>
+                            <GradientStop Color="#FFFFD200" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                    <Rectangle.Effect>
+                        <DropShadowEffect BlurRadius="46" Direction="-97" Color="#FF494949" RenderingBias="Quality" ShadowDepth="1"/>
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Button Uid="0" Content="Recarga" Height="39" VerticalAlignment="Bottom" FontSize="15" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontFamily="Aller" FontWeight="Normal" Margin="-0.048,0,0.048,156" HorizontalContentAlignment="Left" Click="Button_Click" BorderThickness="0"/>
+                <Button Uid="1" Content="Pasajeros" Height="39" VerticalAlignment="Bottom" FontSize="15" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontFamily="Aller" FontWeight="Normal" Margin="0,0,0,117" HorizontalContentAlignment="Left" Click="Button_Click" BorderThickness="0"/>
+                <Button Uid="2" Content="Transporte" Height="39" Margin="-0.048,78,0.009,78" FontSize="15" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontFamily="Aller" FontWeight="Normal" HorizontalContentAlignment="Left" Click="Button_Click" BorderThickness="0"/>
+                <Button Uid="3" Content="Administración" Height="39" VerticalAlignment="Bottom" Margin="-0.048,0,-0.039,39" FontSize="15" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontFamily="Aller" FontWeight="Normal" HorizontalContentAlignment="Left" Click="Button_Click" BorderThickness="0"/>
+                <Button Uid="4" Content="Trabajadores" Height="39" VerticalAlignment="Top" RenderTransformOrigin="0.486,0.468" FontSize="15" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontFamily="Aller" FontWeight="Normal" Margin="0,156,-0.087,0" HorizontalContentAlignment="Left" Click="Button_Click" BorderThickness="0"/>
+            </Grid>
+            <TextBlock Name="Nombre" HorizontalAlignment="Center" Height="23" Margin="73.276,95,28.603,0" TextWrapping="Wrap" Text="Misael" VerticalAlignment="Top" Width="101.121" FontSize="17" Foreground="#FFF7971E" FontFamily="Aller"/>
+            <TextBlock HorizontalAlignment="Center" Height="23" Margin="73.276,73,89.603,0" TextWrapping="Wrap" Text="Hola," VerticalAlignment="Top" Width="40.121" FontSize="16" Foreground="#FFB6B6B6" FontFamily="Aller"/>
+            <Grid HorizontalAlignment="Left" Margin="22,76,0,0" VerticalAlignment="Top" Width="39">
+                <TextBlock x:Name="Letra" VerticalAlignment="Center" FontSize="24" HorizontalAlignment="Center"><Run Text="M"/></TextBlock>
+            </Grid>
+        </Grid>
+        <Frame NavigationUIVisibility="Hidden" x:Name="Pestañas" HorizontalAlignment="Left"  Width="997" Height="650" Margin="203,0,0,0" VerticalAlignment="Top" Background="#FF444444"/>
+        <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="Cerrar sesión" HorizontalAlignment="Left" Height="42" Margin="1042,0,0,0" VerticalAlignment="Top" Width="116" Foreground="#FF343434" FontFamily="Aller" HorizontalContentAlignment="Center" FontSize="14" Click="CSesion_Click" VerticalContentAlignment="Center"/>
+        <Button x:Name="close" Background="{x:Null}" BorderBrush="{x:Null}" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Height="42" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Close_Click" Width="42" Controls:ButtonHelper.CornerRadius="0" BorderThickness="0">
+            <materialDesign:PackIcon Kind="CloseOctagonOutline" Foreground="#FFE81123" Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </Button>
+    </Grid>
+</Window>

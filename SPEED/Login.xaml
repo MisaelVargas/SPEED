@@ -1,0 +1,56 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SPEED"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com" x:Class="SPEED.SQLLogin"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="Login" Height="500" Width="325" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True">
+    <Window.Background>
+        <SolidColorBrush Color="White" Opacity="0"/>
+    </Window.Background>
+    <Grid>
+        <Image Height="344" VerticalAlignment="Top" gif:ImageBehavior.AnimatedSource="Art/autonomous-intersection.gif" Margin="-69.684,0"/>
+        <Rectangle Height="155.5" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="maxresdefault.jpg" Opacity="0.16"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="156" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FFCBCBCB" Opacity="0.68"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle VerticalAlignment="Top" Height="344">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Black" Opacity="0.7"/>
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <BlurEffect Radius="2.5"></BlurEffect>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle Height="240" VerticalAlignment="Bottom" Margin="35,0,35,58" RadiusY="10" RadiusX="10">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="WhiteSmoke"/>
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FF3C3C3C"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid VerticalAlignment="Bottom" Margin="35,0,35,57.5" Height="240">
+            <Label Content="Bienvenido" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5,13,5,5" Foreground="#FFF7971E" FontSize="23" FontFamily="Aller"/>
+            <StackPanel VerticalAlignment="Center" Margin="33,58">
+                <TextBox x:Name="user" Margin="0,10" materialDesign:HintAssist.Hint="Usuario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Aller" FontSize="16" Tag="" CaretBrush="#FF0090BF"/>
+                <PasswordBox x:Name="password" Margin="0,10" materialDesign:HintAssist.Hint="Contraseña" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Aller" FontSize="16" MaxLength="8"/>
+            </StackPanel>
+        </Grid>
+        <Button x:Name="lButton" Height="40" Width="170" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="80,0,80,35" Content="Iniciar sesión" Background="#FFF7971E" BorderBrush="{x:Null}" FontSize="18" Click="Login_Click"/>
+        <Image Source="Art/SPEED2.png" Height="114" VerticalAlignment="Top" Margin="10,50,10,0"/>
+        <Button x:Name="close" Background="{x:Null}" BorderBrush="{x:Null}" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Close_Click" Width="30">
+            <materialDesign:PackIcon Kind="WindowClose" Foreground="#FFA2A2A2" Width="25" Height="25" />
+        </Button>
+    </Grid>
+</Window>

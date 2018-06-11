@@ -1,0 +1,28 @@
+﻿<Page x:Class="SPEED.TRutas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SPEED"
+      mc:Ignorable="d" 
+      d:DesignHeight="608" d:DesignWidth="997"
+      Title="TRutas">
+    <Grid Background="WhiteSmoke">
+        <Grid Margin="40" Height="528" Width="917">
+            <Label Style="{StaticResource MetroLabel}" Content="Nombre" HorizontalAlignment="Left" Height="28" Margin="164,69.927,0,0" VerticalAlignment="Top" Width="79.429" FontFamily="Aller" Foreground="#FF232323"/>
+            <TextBox x:Name="Nombre" Style="{StaticResource MetroTextBox}"  MaxLines="1"  MaxLength="11" HorizontalAlignment="Left" Height="28" Margin="243.429,69.927,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="#FFE6E6E6" BorderBrush="{x:Null}"/>
+            <Label Style="{StaticResource MetroLabel}" Content="KM" HorizontalAlignment="Left" Height="28" Margin="432.715,69.927,0,0" VerticalAlignment="Top" Width="47.143" FontFamily="Aller" Foreground="#FF232323"/>
+            <TextBox x:Name="KM" Style="{StaticResource MetroTextBox}"  MaxLines="1"  MaxLength="5" HorizontalAlignment="Left" Height="28" Margin="479.858,69.927,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57.714" Background="#FFE6E6E6" BorderBrush="{x:Null}" PreviewTextInput="NumberValidationTextBox"/>
+            <Label Style="{StaticResource MetroLabel}" Content="Precio general" HorizontalAlignment="Left" Height="28" Margin="164,122.357,0,0" VerticalAlignment="Top" Width="111" FontFamily="Aller" Foreground="#FF232323"/>
+            <TextBox x:Name="PrecioG" Style="{StaticResource MetroTextBox}"  MaxLines="1"  MaxLength="11" HorizontalAlignment="Left" Height="28" Margin="275,122.357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="#FFE6E6E6" BorderBrush="{x:Null}" PreviewTextInput="NumberValidationTextBox"/>
+            <Label Style="{StaticResource MetroLabel}" Content="Precio con Descuento" HorizontalAlignment="Left" Height="28" Margin="451.786,122.357,0,0" VerticalAlignment="Top" Width="147.643" FontFamily="Aller" Foreground="#FF232323"/>
+            <TextBox x:Name="PrecioD" Style="{StaticResource MetroTextBox}"  MaxLines="1"  MaxLength="11" HorizontalAlignment="Left" Height="28" Margin="599.429,122.357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="#FFE6E6E6" BorderBrush="{x:Null}" PreviewTextInput="NumberValidationTextBox"/>
+            <Button x:Name="Agregar" Style="{x:Null}" Content="Agregar" HorizontalAlignment="Left" Height="28" Margin="311.857,173.715,0,0" VerticalAlignment="Top" Width="128" Background="#FFF7971E" BorderBrush="{x:Null}" FontSize="16" FontFamily="Aller" Foreground="White" Click="Agregar_Click"/>
+            <Button x:Name="Borrar" Style="{x:Null}" Content="Borrar" HorizontalAlignment="Left" Height="28" Margin="484.858,173.715,0,0" VerticalAlignment="Top" Width="128" Background="#FFF7971E" BorderBrush="{x:Null}" FontSize="16" FontFamily="Aller" Foreground="White" Click="Borrar_Click"/>
+            <Label Style="{StaticResource MetroLabel}" Content="Rutas" HorizontalAlignment="Left" Height="35.123" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" FontFamily="Aller" FontSize="20" Foreground="#DD191919" Background="WhiteSmoke"/>
+            <TextBox x:Name="SearchBox" Style="{StaticResource MetroTextBox}" TextAlignment="Justify"  MaxLines="1"  MaxLength="15" HorizontalAlignment="Left" Height="28" Margin="10,249.429,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="765" Background="#FFE6E6E6" FontFamily="Aller" FontSize="15" CaretBrush="#FF3A79B7" BorderBrush="{x:Null}" SelectionBrush="#FF979797" />
+            <Button  Style="{x:Null}" Content="Buscar" HorizontalAlignment="Left" Height="28" Margin="779,249.429,0,0" VerticalAlignment="Top" Width="128" Background="#FFF7971E" BorderBrush="{x:Null}" FontSize="16" FontFamily="Aller" Foreground="White" Click="Buscar_Click"/>
+            <DataGrid x:Name="RutasGrid" IsReadOnly="True" HorizontalAlignment="Left" Height="210.286" Margin="10,307.714,0,0" VerticalAlignment="Top" Width="897" MouseDoubleClick="RutasGrid_MouseDoubleClick"/>
+        </Grid>
+    </Grid>
+</Page>

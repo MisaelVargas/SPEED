@@ -1,0 +1,22 @@
+<!-- Created with Ai->XAML Export Plug-In Version 0.2 (PC/64) -->
+<!-- By Mike Swanson (http://blog.mikeswanson.com/)           -->
+
+<Viewbox Width="24.000" Height="22.000"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Canvas Width="24.000" Height="22.000">
+
+  <Canvas>
+
+  <!-- Capa 1/<Trazado> -->
+  <Path StrokeThickness="2.0" Stroke="#ff000000" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Data="F1 M 1.000,5.000 L 1.000,21.000 L 8.000,17.000 L 16.000,21.000 L 23.000,17.000 L 23.000,1.000 L 16.000,5.000 L 8.000,1.000 L 1.000,5.000 Z"/>
+
+  <!-- Capa 1/<Trazado> -->
+  <Path StrokeThickness="2.0" Stroke="#ff000000" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Data="F1 M 8.000,1.000 L 8.000,17.000"/>
+
+  <!-- Capa 1/<Trazado> -->
+  <Path StrokeThickness="2.0" Stroke="#ff000000" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Data="F1 M 16.000,5.000 L 16.000,21.000"/>
+
+  </Canvas>
+</Canvas>
+</Viewbox>
